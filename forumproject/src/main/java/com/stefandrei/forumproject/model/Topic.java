@@ -21,7 +21,7 @@ public class Topic {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer topicId;
 
-    @OneToMany(mappedBy="reply" , cascade = CascadeType.ALL)
+    @OneToMany(mappedBy="topic" , cascade = CascadeType.ALL)
     private List<Reply> replies;
 
 }

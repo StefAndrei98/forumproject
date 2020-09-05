@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thyneleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+    <link rel="stylesheet" href="../static/forumstyle.css">
     <meta charset="UTF-8">
-    <title>Designeul Mistic</title>
-    <link rel="stylesheet" type="text/css" href="../static/style.css" th:href="@{/style.css}"/>
+    <title>Buhaiul Muribund</title>
 </head>
-<body >
-<h1>Home page for my forum !</h1>
-<div class="container">
-<p>
-Time to shine !
-</p>
+<body>
+
+<div class="row">
+    <div class="column left" >
+        <h1>Tutoriale</h1>
+        <p>Informatii Utile </p>
+    </div>
+    <div class="column middle" >
+<!--            <h1 style="color:white">Bine ati venit la Buhaiul Muribund !-->
+<!--                Aici o sa invatati limbajul Buhaiului ! Acest limbaj consta in a buhaii o data pentru 1 si de doua ori pentru 0 iar deviza cestei comunitati este : "Nu esti doar Buhai ! Esti Buhai de Balta ! </h1>-->
+
+<div class="elementInside">
+            <p >
+                Output Here !
+            </p>
+
+
+   <textarea class="textAdd" cols="50" rows="10" placeholder="Add your content here !">
+</textarea>
+
+            <button class="btn_style" type="submit">Sent</button>
 </div>
+
+    </div>
+    <div class="column right" >
+        <h1>Utilizatori</h1>
+        <p>Informatii Utilizatori </p>
+
+        <table>
+            <thead>
+            <tr>
+                <td>
+                    <h5><b>User ID</b></h5>
+                </td>
+
+                <td>
+                    <h5><b>User first Name</b></h5>
+                </td>
+
+                <td>
+                    <h5><b>User last Name</b></h5>
+                </td>
+
+                <td>
+                    <h5><b>Actions</b></h5>
+                </td>
+
+            </tr>
+            </thead>
+            <tbody >
+            <tr>
+                <td> User 0 </td>
+                <td > User 1 </td>
+                <td > User 2 </td>
+                <td>
+
+
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+
+
 
 </body>
 </html>

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-*{
+header{
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-background-color: #24252A;
+background-image: url('../static/temabara.png') ;
+background-repeat: no-repeat;
+border-radius: 50px;
 }
 
 li, a, button{
@@ -19,7 +21,7 @@ header{
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 30px 10%;
+padding: 20px 10%;
 }
 
 .logo_forum{
@@ -46,7 +48,7 @@ color: #e1ff38
 button{
 padding: 9px 25px;
 color: #edf0f1;
-background-color: #865204 ;
+background-image: url('../static/CloadsBG.png') ;
 border: none;
 border-radius: 50px;
 cursor: pointer;
@@ -55,6 +57,6 @@ transition: all 0.3s ease 0s;
 
 button:hover{
 color:black;
+background-image: none;
 background-color: #e1ff38
 }
-

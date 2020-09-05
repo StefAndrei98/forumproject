@@ -1,13 +1,50 @@
-body{
-    background-image: url('CloadsBG.png');
+ * {
+box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 600px;
+}
+
+.left, .right {
+  width: 25%;
+  background-color: #585858
+}
+
+.middle {
+  width: 50%;
+  background-color: #464646
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+
+
+ .backgroundEffects{
+    background-image: url('../static/CloadsBG.png');
     background-repeat: no-repeat;
 }
 
-header{
+.addContent{
 display: flex;
 justify-content: space-around;
 align-items: center;
 padding: 30px 10%;
 }
+
+/* header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 30px 10%;
+}
+*/
 
 

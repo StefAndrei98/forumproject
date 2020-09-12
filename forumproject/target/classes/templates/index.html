@@ -5,6 +5,31 @@
     <link rel="stylesheet" href="../static/forumstyle.css">
     <meta charset="UTF-8">
     <title>Buhaiul Muribund</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../static/nav_style.css"/>
+
+        <header>
+            <img class="logo_forum" src="../static/LogoBuhai.png" alt="logo" >
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Show</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">AddContent</a></li>
+
+                </ul>
+            </nav>
+            <a class="nav_btn" href="#"><button>Logout</button></a>
+        </header>
+
+
 </head>
 <body>
 
@@ -22,10 +47,46 @@
                 Output Here !
             </p>
 
+    <!--     Area Output-->
+
+    <table class="tableposition" >
+        <thead>
+        <tr>
+            <td>
+                <h5><b>Title</b></h5>
+            </td>
+
+            <td>
+                <h5><b>Short Description</b></h5>
+            </td>
+
+            <td>
+                <h5><b>Actions</b></h5>
+            </td>
+
+        </tr>
+        </thead>
+        <tbody >
+        <tr>
+            <td > TitleContent </td>
+            <td > ShortDescriptionContent </td>
+            <td>
+
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    <!--     Area Output-->
+
+    </br>
 
    <textarea class="textAdd" cols="50" rows="10" placeholder="Add your content here !">
 </textarea>
-
+</br>
             <button class="btn_style" type="submit">Sent</button>
 </div>
 
@@ -34,19 +95,11 @@
         <h1>Utilizatori</h1>
         <p>Informatii Utilizatori </p>
 
-        <table>
+        <table class="tableposition">
             <thead>
             <tr>
                 <td>
-                    <h5><b>User ID</b></h5>
-                </td>
-
-                <td>
-                    <h5><b>User first Name</b></h5>
-                </td>
-
-                <td>
-                    <h5><b>User last Name</b></h5>
+                    <h5><b>Utilizator</b></h5>
                 </td>
 
                 <td>
@@ -57,12 +110,8 @@
             </thead>
             <tbody >
             <tr>
-                <td> User 0 </td>
-                <td > User 1 </td>
-                <td > User 2 </td>
+                <td > U.Content </td>
                 <td>
-
-
                 </td>
 
             </tr>

@@ -14,22 +14,22 @@ import java.util.List;
 
 @Controller
 public class TopicController {
-
-    @Autowired
-    private TopicServices topicServices;
-
-    @Autowired
-//    private SchoolGroupService schoolGroupService;
-
-    @GetMapping("alltopics")
-    public String showAllTopics(Model model){
-
-        List<Topic> topicList = topicServices.findAll ();
-        model.addAttribute ("topics" , topicList);
-
-        return "topiccontent/showalltopics";
-    }
-
+//
+//    @Autowired
+//    private TopicServices topicServices;
+//
+//    @Autowired
+////    private SchoolGroupService schoolGroupService;
+//
+//    @GetMapping("alltopics")
+//    public String showAllTopics(Model model){
+//
+//        List<Topic> topicList = topicServices.findAll ();
+//        model.addAttribute ("topics" , topicList);
+//
+//        return "topiccontent/showalltopics";
+//    }
+//
 //    @GetMapping("/addstudent")
 //    public String addstudent(Model model){
 //
@@ -77,6 +77,6 @@ public class TopicController {
 //
 //        return "redirect:/allstudents";
 //    }
-
-
+//
+//
 }

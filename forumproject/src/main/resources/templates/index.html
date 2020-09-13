@@ -2,9 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <link rel="stylesheet" href="../static/forumstyle.css">
+    <link rel="stylesheet" th:href="@{/css/forumstyle.css}">
     <meta charset="UTF-8">
     <title>Buhaiul Muribund</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" >
 
     <head>
         <meta charset="UTF-8">
@@ -15,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="../static/nav_style.css"/>
 
         <header>
-            <img class="logo_forum" src="../static/LogoBuhai.png" alt="logo" >
+            <img class="logo_forum" th:src="@{/img/LogoBuhai.png}" alt="logo" >
             <nav>
                 <ul class="nav_links">
                     <li><a href="#">Home</a></li>

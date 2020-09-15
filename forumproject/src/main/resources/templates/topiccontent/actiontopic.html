@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" th:href="@{/css/forumstyle.css}">
-    <link rel="stylesheet" type="text/css" href="../static/nav_style.css"/>
-    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
     <title>Topic Post</title>
 </head>
 <body>
 <div >
-    <form  th:action="@{/actiontopic}" th:object="${topiccontent}" method="post">
+    <form  th:action="@{/actiontopic}" th:object="${topic}" method="post">
         <div >
             <h1>Start Topic</h1>
             <hr>

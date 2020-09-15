@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" th:href="@{/css/forumstyle.css}">
+    <link rel="stylesheet" th:href="@{/css/topicstyle.css}">
     <meta charset="UTF-8">
     <title>Topic Post</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" >
 
     <header>
         <img class="logo_forum" th:src="@{/img/LogoBuhai.png}" alt="logo" >
         <nav>
             <ul class="nav_links">
-                <li><a href="#">Home</a></li>
+                <li><a th:href="@{/}">Home</a></li>
                 <li><a href="#">Show</a></li>
                 <li><a href="#">Themes</a></li>
                 <li><a href="#">Topics</a></li>
@@ -22,28 +24,27 @@
 
 </head>
 <body>
-<div >
-    <form  th:action="@{/actiontopic}" th:object="${topic}" method="post">
+    <form class="positionContentCenter"   th:action="@{/actiontopic}" th:object="${topic}" method="post">
         <div >
             <h1>Start Topic</h1>
             <hr>
             <div>
                 <div >
-                    <label for="topic_title"><b> Title Topic </b></label>
-                    <input th:field="*{topicTitle}" id="topic_title" type="text" , placeholder="Title Topic"
+                    <label for="topic_title"><h1> Title Topic </h1></label>
+                    <input class="input_area" th:field="*{topicTitle}" id="topic_title" type="text" , placeholder="Title Topic"
                            name="topic_title" required>
                 </div>
             </div>
             <div >
                 <div >
-                    <label for="topic_content"><b> Content Topic </b></label>
-                    <input th:field="*{topicContent}" id="topic_content" type="text" , placeholder="Content Topic" name="topic_content"
+                    <label for="topic_content"><h1> Content Topic </h1></label>
+                    <input class="input_area" th:field="*{topicContent}" id="topic_content" type="text" , placeholder="Content Topic" name="topic_content"
                            required>
                 </div>
             </div>
 
             <div>
-                <button type="submit">ADD</button>
+                <button type="submit">Start topic</button>
             </div>
         </div>
     </form>

@@ -14,7 +14,7 @@
         <title>Navbar</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../static/nav_style.css"/>
+
 
         <header>
             <img class="logo_forum" th:src="@{/img/LogoBuhai.png}" alt="logo" >
@@ -24,7 +24,7 @@
                     <li><a href="#">Show</a></li>
                     <li><a href="#">Themes</a></li>
                     <li><a href="#">Topics</a></li>
-                    <li><a href="#">AddContent</a></li>
+                    <li><a th:href="@{/actiontopics}">AddContent</a></li>
 
                 </ul>
             </nav>

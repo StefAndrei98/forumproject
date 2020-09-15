@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/forumstyle.css}">
+    <link rel="stylesheet" type="text/css" href="../static/nav_style.css"/>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+    <title>Topic Post</title>
 </head>
 <body>
+<div >
+    <form  th:action="@{/actiontopic}" th:object="${topiccontent}" method="post">
+        <div >
+            <h1>Start Topic</h1>
+            <hr>
+            <div>
+                <div >
+                    <label for="topic_title"><b> Title Topic </b></label>
+                    <input th:field="*{topicTitle}" id="topic_title" type="text" , placeholder="Title Topic"
+                           name="topic_title" required>
+                </div>
+            </div>
+            <div >
+                <div >
+                    <label for="topic_content"><b> Content Topic </b></label>
+                    <input th:field="*{topicContent}" id="topic_content" type="text" , placeholder="Content Topic" name="topic_content"
+                           required>
+                </div>
+            </div>
 
+            <div>
+                <button type="submit">ADD</button>
+            </div>
+        </div>
+    </form>
+</div>
+<hr>
 </body>
 </html>

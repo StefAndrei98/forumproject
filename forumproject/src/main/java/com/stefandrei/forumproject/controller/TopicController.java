@@ -14,9 +14,10 @@ import java.util.List;
 
 @Controller
 public class TopicController {
-//
-//    @Autowired
-//    private TopicServices topicServices;
+
+    @Autowired
+    private TopicServices topicServices;
+
 //
 //    @Autowired
 ////    private SchoolGroupService schoolGroupService;
@@ -30,22 +31,22 @@ public class TopicController {
 //        return "topiccontent/showalltopics";
 //    }
 //
-//    @GetMapping("/addstudent")
-//    public String addstudent(Model model){
-//
-//        model.addAttribute ("student" , new Student ());
+    @GetMapping("/actiontopic")
+    public String actiontopic(Model model){
+
+        model.addAttribute ("topic" , new Topic ());
 //        model.addAttribute ("schoolgroups" , schoolGroupService.findAll ());
-//
-//        return "student/addstudent";
-//    }
-//
-//    @PostMapping("/addstudent")
-//    public String addstudent(@ModelAttribute Student student){
-//        System.out.println (student);
-//        studentService.save (student);
-//
-//        return "redirect:/allstudents";
-//    }
+
+        return "topiccontent/actiontopic";
+    }
+
+    @PostMapping("/actiontopic")
+    public String actiontopic(@ModelAttribute Topic topic){
+        System.out.println (topic);
+        topicServices.save (topic);
+
+        return "redirect:/actiontopic";
+    }
 //
 //    @GetMapping("/editstudent/{id}")
 //    public String editstudent(Model model , @PathVariable Integer id){

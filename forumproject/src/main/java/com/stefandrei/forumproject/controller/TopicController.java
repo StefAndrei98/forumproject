@@ -23,15 +23,15 @@ public class TopicController {
 //    @Autowired
 ////    private SchoolGroupService schoolGroupService;
 //
-//    @GetMapping("alltopics")
-//    public String showAllTopics(Model model){
-//
-//        List<Topic> topicList = topicServices.findAll ();
-//        model.addAttribute ("topics" , topicList);
-//
-//        return "topiccontent/showalltopics";
-//    }
-//
+    @GetMapping("/showtopic")
+    public String showTopics(Model model){
+
+        List<Topic> topicList = topicServices.findAll ();
+        model.addAttribute ("topic" , topicList);
+
+        return "topiccontent/showtopic";
+    }
+
     @GetMapping("/actiontopic")
     public String actiontopic(Model model){
 

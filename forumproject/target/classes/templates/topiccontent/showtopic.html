@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" th:href="@{/css/showtopicstyle.css}">
+
+    <title> All Topics </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" >
+
+    <header>
+        <img class="logo_forum" th:src="@{/img/LogoBuhai.png}" alt="logo" >
+        <nav>
+            <ul class="nav_links">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a href="#">Show</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a th:href="@{/showtopic}">Topics</a></li>
+                <li><a th:href="@{/actiontopic}">AddContent</a></li>
+
+            </ul>
+        </nav>
+        <a class="nav_btn" href="#"><button>Logout</button></a>
+    </header>
+
+</head>
+<body>
+
+<h1>Topics Here !</h1>
+
+<table>
+    <thead>
+    <tr>
+        <td>
+            <h1><b>Title</b></h1>
+        </td>
+
+        <td>
+            <h1><b>Content</b></h1>
+        </td>
+
+        <td>
+            <h1><b>Actions</b></h1>
+        </td>
+
+    </tr>
+    </thead>
+    <tbody th:each="s: ${topic}">
+    <tr>
+        <td th:text="${s.topicTitle}"></td>
+        <td th:text="${s.topicContent}"></td>
+        <td>
+<!--            <a th:href="@{/editstudent/{id}(id=${s.studentId})}"><i class="small material-icons">edit</i></a>-->
+<!--            <a th:href="@{/deletestudent/{id}(id=${s.studentId})}"><i class="small material-icons">delete</i></a>-->
+
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

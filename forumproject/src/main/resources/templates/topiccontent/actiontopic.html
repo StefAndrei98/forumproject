@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" th:href="@{/css/topicstyle.css}">
+    <link rel="stylesheet" th:href="@{/css/actiontopicstyle.css}">
     <meta charset="UTF-8">
     <title>Topic Post</title>
 
@@ -14,7 +14,7 @@
                 <li><a th:href="@{/}">Home</a></li>
                 <li><a href="#">Show</a></li>
                 <li><a href="#">Themes</a></li>
-                <li><a href="#">Topics</a></li>
+                <li><a th:href="@{/showtopic}">Topics</a></li>
                 <li><a th:href="@{/actiontopic}">AddContent</a></li>
 
             </ul>

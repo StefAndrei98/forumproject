@@ -46,7 +46,7 @@ public class TopicController {
         System.out.println (topic);
         topicServices.save (topic);
 
-        return "redirect:/actiontopic";
+        return "redirect:/showtopic";
     }
 //
 //    @GetMapping("/editstudent/{id}")

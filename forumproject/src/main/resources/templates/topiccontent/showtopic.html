@@ -9,27 +9,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 
-    <header>
-        <img class="logo_forum" th:src="@{/img/LogoBuhai.png}" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a th:href="@{/}">Home</a></li>
-                <li><a href="#">Show</a></li>
-                <li><a href="#">Themes</a></li>
-                <li><a th:href="@{/showtopic}">Topics</a></li>
-                <li><a th:href="@{/actiontopic}">AddContent</a></li>
+    <!--    Navigate-->
+    <nav th:include="navigation.html :: navigation">
+    </nav>
 
-            </ul>
-        </nav>
-        <a class="nav_btn" href="#">
-            <button>Logout</button>
-        </a>
-    </header>
+    <!--    Navigate-->
+
 
 </head>
 <body>
-
-<h1>Topics Here !</h1>
 
 <div class="topicsPosition">
     <table>
@@ -54,8 +42,8 @@
             <td th:text="${s.topicTitle}"></td>
             <td th:text="${s.topicContent}"></td>
             <td>
+                <button th:href="@{/deletetopic/{id}(id=${s.topicId})}">Delete</button>
                 <!--            <a th:href="@{/editstudent/{id}(id=${s.studentId})}"><i class="small material-icons">edit</i></a>-->
-                <!--            <a th:href="@{/deletestudent/{id}(id=${s.studentId})}"><i class="small material-icons">delete</i></a>-->
 
             </td>
 

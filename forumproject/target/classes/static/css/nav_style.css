@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+/* ---------- Navigare ----------- */
+
+
 
 header{
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-background-image: url('../static/temabara.png') ;
+background-image: url('../img/temabara.png') ;
 background-repeat: no-repeat;
 border-radius: 50px;
 }
@@ -48,7 +50,7 @@ color: #e1ff38
 button{
 padding: 9px 25px;
 color: #edf0f1;
-background-image: url('../static/CloadsBG.png') ;
+background-image: url('../img/CloadsBG.png') ;
 border: none;
 border-radius: 50px;
 cursor: pointer;
@@ -59,4 +61,3 @@ button:hover{
 color:black;
 background-image: none;
 background-color: #e1ff38
-}

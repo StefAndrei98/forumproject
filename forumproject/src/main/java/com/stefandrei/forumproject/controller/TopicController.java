@@ -32,6 +32,17 @@ public class TopicController {
         return "topiccontent/showtopic";
     }
 
+
+    @GetMapping("/onlytitle")
+    public String onlyTitle(Model model){
+
+        List<Topic> topicList = topicServices.findAll ();
+        model.addAttribute ("topic" , topicList);
+
+        return "topiccontent/onlytitle";
+    }
+
+
     @GetMapping("/actiontopic")
     public String actiontopic(Model model){
 
@@ -71,14 +82,13 @@ public class TopicController {
 //        return "redirect:/allstudents";
 //    }
 //
-//    @GetMapping("/deletestudent/{id}")
-//    public String deletestudent(@PathVariable Integer id){
-//        studentService.deleteById(id);
-//        // Student student = studentRepository.findById (id).get ();
-//        // studentRepository.delete(student);
-//
-//        return "redirect:/allstudents";
-//    }
-//
-//
+
+    @GetMapping("/deletetopic/{id}")
+    public String deletetopic(@PathVariable Integer id){
+        topicServices.deleteById(id);
+        // Student student = studentRepository.findById (id).get ();
+        // studentRepository.delete(student);
+
+        return "redirect:/showtopic";
+    }
 }

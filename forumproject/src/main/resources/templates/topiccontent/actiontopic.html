@@ -7,22 +7,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 
-    <header>
-        <img class="logo_forum" th:src="@{/img/LogoBuhai.png}" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a th:href="@{/}">Home</a></li>
-                <li><a href="#">Show</a></li>
-                <li><a href="#">Themes</a></li>
-                <li><a th:href="@{/showtopic}">Topics</a></li>
-                <li><a th:href="@{/actiontopic}">AddContent</a></li>
+    <!--    Navigate-->
+    <nav th:include="navigation.html :: navigation">
+    </nav>
 
-            </ul>
-        </nav>
-        <a class="nav_btn" href="#">
-            <button>Logout</button>
-        </a>
-    </header>
+    <!--    Navigate-->
+
 
 </head>
 <body>

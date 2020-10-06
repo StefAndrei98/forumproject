@@ -42,6 +42,8 @@
             <td th:text="${s.topicTitle}"></td>
             <td th:text="${s.topicContent}"></td>
             <td>
+
+                <button> Reply </button>
                 <button th:href="@{/deletetopic/{id}(id=${s.topicId})}">Delete</button>
                 <!--            <a th:href="@{/editstudent/{id}(id=${s.studentId})}"><i class="small material-icons">edit</i></a>-->
 

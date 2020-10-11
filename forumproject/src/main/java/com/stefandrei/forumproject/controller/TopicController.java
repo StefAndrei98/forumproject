@@ -19,10 +19,6 @@ public class TopicController {
     private TopicServices topicServices;
 
 
-//
-//    @Autowired
-////    private SchoolGroupService schoolGroupService;
-//
     @GetMapping("/showtopic")
     public String showTopics(Model model){
 

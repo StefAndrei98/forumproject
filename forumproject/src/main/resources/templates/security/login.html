@@ -22,15 +22,15 @@
 
 </head>
 <body>
-    <h1>Login</h1>
 
         <form class="positionContentCenter" th:action="@{/login}" method="post">
-            <label for="username">Username</label>
+            <label for="username"><h1>Username</h1></label>
             <input type="text" id="username" name="username" required>
-            <label for="password">Password</label>
+            <br>
+            <label for="password"><h1>Password</h1></label>
             <input type="password" id="password" name="password" required>
-
-            <button type="submit" value="Login">Login</button>
+            <br>
+            <button type="submit" value="Login"><h1>Login</h1></button>
 
             <p>Not register?
                 <a th:href="@{/register}">Register</a>

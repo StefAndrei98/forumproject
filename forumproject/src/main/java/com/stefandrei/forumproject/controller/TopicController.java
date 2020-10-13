@@ -55,35 +55,27 @@ public class TopicController {
 
         return "redirect:/showtopic";
     }
-//
-//    @GetMapping("/editstudent/{id}")
-//    public String editstudent(Model model , @PathVariable Integer id){
+
+    @GetMapping("/actionreply/{id}")
+    public String replyPost(Model model , @PathVariable Integer id){
 //        Student student = studentService.findById (id);
 //        model.addAttribute ("student" , student);
 //        model.addAttribute ("schoolgroups" , schoolGroupService.findAll ());
-//
-//        return "student/editstudent";
-//    }
-//
-//    @PostMapping("/editstudent/{id}")
-//    public String editstudent(@ModelAttribute Student student , @PathVariable Integer id){
-//
-////        Student database_student = studentService.findById (id); // to be able to update that id, get it from database
-////        database_student.setFirstName (student.getFirstName ()); // update fields
-////        database_student.setLastName (student.getLastName ());
-////        studentService.save (database_student);
+
+        return "replycontent/actionreply";
+    }
+
+    @PostMapping("/actionreply/{id}")
+    public String replyPost(){
 //        studentService.save (student);
-//
-//
-//        return "redirect:/allstudents";
-//    }
-//
+
+        return "redirect:/actionreply";
+    }
+
 
     @GetMapping("/deletetopic/{id}")
     public String deletetopic(@PathVariable Integer id){
         topicServices.deleteById(id);
-        // Student student = studentRepository.findById (id).get ();
-        // studentRepository.delete(student);
 
         return "redirect:/showtopic";
     }
